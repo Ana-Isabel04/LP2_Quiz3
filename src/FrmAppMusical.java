@@ -146,33 +146,6 @@ public class FrmAppMusical extends JFrame {
 
     }
 
-    // private void cargarArchivo(){
-    //     try {
-    //         JFileChooser selector = new JFileChooser();
-
-    //         selector.setFileFilter(new FileNameExtensionFilter("Archivos json", "json"));
-
-    //         int resultado = selector.showOpenDialog(null);
-
-    //         if (resultado == JFileChooser.APPROVE_OPTION) {
-    //             archivoSeleccionado = selector.getSelectedFile();
-    //             JOptionPane.showMessageDialog(null,
-    //                     "Archivo seleccionado: " + archivoSeleccionado.getAbsolutePath());
-    //         }
-    //         nombreArchivo = archivoSeleccionado.getAbsolutePath();
-
-    //         ObjectMapper objectMapper = new ObjectMapper();
-    //         NotaMusical[] data = objectMapper.readValue(new File(nombreArchivo), NotaMusical[].class);
-
-    //         for (NotaMusical nota : data) {
-    //             model.addRow(new Object[] { nota.getNota(), nota.getFigura(), nota.getOctava() });
-    //         }
-
-    //     } catch (Exception ex) {
-    //         JOptionPane.showMessageDialog(null, "No se pudo cargar el archivo " + ex, nombreArchivo,
-    //                 JOptionPane.ERROR_MESSAGE);
-    //     }
-    // }
 
     private void Agregar() {
         if (!"NOTA".equals(jnota.getSelectedItem()) && !"FIGURA".equals(jFigura.getSelectedItem()) && !"OCTAVA".equals(jOctava.getSelectedItem())) {
